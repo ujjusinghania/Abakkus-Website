@@ -15,13 +15,20 @@
 <style>
     body {
         background-color: #303F9F;
+        overflow: hidden;
+        margin=0px;
+    }
+
+    .hiddenElement {
+        display: none;
     }
 
     .nameCompany {
         color: #FFC107;
         font-weight: 900;
         padding-top: 1cm;
-        font-size: 1cm;
+        font-size: 2cm;
+        text-align: center;
     }
 
     p.navBarItem {
@@ -31,33 +38,49 @@
         padding-top: 1cm;
         align-self: flex-end;
     }
+
+    div.outPopUp {
+        position: absolute;
+        width: 60%;
+        z-index: 15;
+        top: 50%;
+        left: 30%;
+        margin: -100px 0 0 -150px;
+        text-align: center;
+    }
 </style>
 
 <body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/static/js/materialize.min.js"></script>
-
+    <script src="/static/js/particles.js"></script>
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo nameCompany">Abakkus Investing</p>
-                </a>
+                <a href="#" class="brand-logo">Logo</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a href="/" class="waves-effect waves-orange">Home</a>
-                    </li>
                     <li>
                         <a href="/contactUs" class="waves-effect waves-orange">Contact Us</a>
                     </li>
                     <li>
                         <a href="/about" class="waves-effect waves-orange">About</a>
                     </li>
+                    <li>
+                        <a href="/" class="waves-effect waves-orange">Home</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <button class="waves-effect waves-light btn-large" href="#" id="test-button" onclick="getRandomColor()">Wave</button>
+    <div id="particles-js" position="absolute"></div>
+    <div class="outPopUp">
+        <span class="nameCompany hiddenElement">Abakkus Investing</span>
+        <br/>
+        <span class="nameCompany hiddenElement">
+            <font color="white">Insert Tagline Over Here</font>
+        </span>
+    </div>
 </body>
 
 <script>
@@ -66,13 +89,13 @@
     $(".nav-wrapper").css("padding-left", '0.75cm');
     $(".nav-wrapper").css("padding-right", "0.75cm");
 
-    $("#test-button").append("<b>YAY!</b>");
-    
-    $(document).ready(function(){
-        $("test-button").click(function() {
-
-        });
+    particlesJS.load('particles-js', '/static/assets/particles.json', function () {
+        console.log('callback - particles.js config loaded');
     });
+
+    $(document).ready(function () {
+        $(".hiddenElement").fadeIn(4000);
+    }, 4000);
 </script>
 
 </html>
