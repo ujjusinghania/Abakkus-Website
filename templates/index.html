@@ -15,8 +15,8 @@
 <style>
     body {
         background-color: #303F9F;
-        overflow: hidden;
-        margin=0px;
+        /* overflow: hidden; */
+        margin: 0px;
     }
 
     .hiddenElement {
@@ -43,10 +43,18 @@
         position: absolute;
         width: 60%;
         z-index: 15;
-        top: 50%;
-        left: 30%;
-        margin: -100px 0 0 -150px;
+        top: 40%;
+        /* left: 30%; */
+        margin-left: 20%;
         text-align: center;
+    }
+
+    div.fullScreenBlock {
+        background-color: #303F9F;
+        overflow: hidden;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
     }
 </style>
 
@@ -61,26 +69,30 @@
                 <a href="#" class="brand-logo">Logo</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
+                        <a href="/" class="waves-effect waves-orange">Home</a>
+                    </li>
+                    <li>
                         <a href="/contactUs" class="waves-effect waves-orange">Contact Us</a>
                     </li>
                     <li>
                         <a href="/about" class="waves-effect waves-orange">About</a>
                     </li>
-                    <li>
-                        <a href="/" class="waves-effect waves-orange">Home</a>
-                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div id="particles-js" position="absolute"></div>
-    <div class="outPopUp">
-        <span class="nameCompany hiddenElement">Abakkus Investing</span>
-        <br/>
-        <span class="nameCompany hiddenElement">
-            <font color="white">Insert Tagline Over Here</font>
-        </span>
+    <div class="fullScreenBlock">
+        <div id="particles-js" position="absolute"></div>
+        <div class="outPopUp">
+            <span class="nameCompany hiddenElement">Abakkus Investing</span>
+            <br/>
+            <span class="nameCompany hiddenElement">
+                <font color="white">Insert Tagline Over Here</font>
+            </span>
+        </div>
     </div>
+    <div class="fullScreenBlock" id="aboutSection" />
+    <div class="fullScreenBlock" id="contactUsSection" />
 </body>
 
 <script>
@@ -88,6 +100,8 @@
     $(".nav-wrapper").css("background-color", "#303F9F");
     $(".nav-wrapper").css("padding-left", '0.75cm');
     $(".nav-wrapper").css("padding-right", "0.75cm");
+    $("#aboutSection").css("background-color", "red");
+    $("#contactUsSection").css("background-color", "green");
 
     particlesJS.load('particles-js', '/static/assets/particles.json', function () {
         console.log('callback - particles.js config loaded');
