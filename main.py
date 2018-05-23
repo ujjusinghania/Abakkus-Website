@@ -26,6 +26,10 @@ def gotNewPerson():
 
 @app.errorhandler(404)
 def page_not_found(e):
+    return redirect(url_for('error_page_not_found'))
+
+@app.route('/error-404-page-not-found')
+def error_page_not_found():
     return render_template('404.html'), 404
 
 app.secret_key = os.urandom(24)

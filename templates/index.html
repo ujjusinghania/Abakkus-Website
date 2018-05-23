@@ -15,11 +15,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/static/js/materialize.min.js"></script> {% include "navigationBar.html" %}
 
-    <div class="imgbox scrollspy" id="homeSection">
+    <div class="imgbox" id="homeSection">
         <img class="center-fit" src='/static/imgs/Squirrel Header.png'>
     </div>
 
-    <div class="fullScreenBlock scrollspy" id="aboutSection">
+    <div class="fullScreenBlock" id="faqSection">
         <h4 style="text-align: center; padding-top: 2%;">Frequently Asked Questions (FAQs)</h4>
         <div name="info-cards" style="padding: 2%">
             <ul class="collapsible z-depth-2">
@@ -70,8 +70,9 @@
                     <div class="collapsible-header">
                         <i class="material-icons">person_add</i>Where can I apply to join the team?</div>
                     <div class="collapsible-body">
-                        <span>You can email your CV to hr@abakkusinvest.com. You can aslo follow us on Facebook, Twitter
-                            and LinkedIn to stay up to date on future opportunities.</span>
+                        <span>You can email your CV to
+                            <font style="color: dodgerblue; font-weight: 500;">hr@abakkusinvest.com</font>. You can aslo follow us on Facebook, Twitter and LinkedIn to stay
+                            up to date on future opportunities.</span>
                     </div>
                 </li>
             </ul>
@@ -83,24 +84,24 @@
         <h5 style="text-align: center;">Updates and Insights delivered directly to your mailbox.</h5>
 
         <div class="row">
-            <form class=" col s6 offset-s3 " action="/newsLetterRegistration " method="POST ">
-                <div class="card z-depth-2" style="height: fit-content">
-                    <div class="row " style="padding:2% ">
-                        <div class="input-field col s12 m3 l3 ">
+            <div class="card-panel">
+                <form action="/newsLetterRegistration" method="POST ">
+                    <div class="row" style="background-color: black">
+                        <div class="input-field col s12 m12 l4" style="background-color: indigo">
                             <!-- <i class="material-icons prefix ">phone</i> -->
-                            <input id="name " name="name " type="text " class="validate ">
+                            <input id="name " name="name " type="text " class="validate" style="width:100%">
                             <label for="name ">Name</label>
                         </div>
-
-                        <div class="input-field col s12 m5 l5 ">
+                        <div class="input-field col s12 m12 l6" style="background-color: indianred">
                             <!-- <i class="material-icons prefix ">phone</i> -->
-                            <input id="email_address " name="email_address " type="text " class="validate ">
+                            <input id="email_address " name="email_address " type="text " class="validate" style="width:100%">
                             <label for="email_address ">Email Address</label>
                         </div>
-                        <button class="btn waves-effect waves-light col s3 m1 l1 " type="submit " name="action ">Submit
-                        </button>
+                        <div class="col s12 m12 l2" style="background-color: dodgerblue; padding-top:16px;">
+                            <button class="btn waves-effect waves-light" type="submit" name="action" style="width:100%;">Submit</button>
+                        </div>
                     </div>
-            </form>
+                </form>
             </div>
         </div>
     </div>
@@ -113,7 +114,7 @@
     $("#newsletterRegistration").css("background-color", "#ECECEF");
     $(document).ready(function () {
         $(".collapsible ").collapsible();
-        $('.scrollspy').scrollSpy();
+        $('.scrollspy').scrollSpy({ throttle: 10 });
     });
 
     $(document).ready(function () {
