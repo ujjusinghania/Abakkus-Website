@@ -6,128 +6,36 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/static/styles/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="/static/styles/abakkus.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-
-<style>
-    body {
-        background-color: white;
-        /* overflow: hidden; */
-        margin: 0px;
-    }
-
-    .hiddenElement {
-        display: none;
-    }
-
-    .nameCompany {
-        color: #1D2668;
-        font-weight: 900;
-        padding-top: 1cm;
-        font-size: 2cm;
-        text-align: center;
-    }
-
-    div.division {
-        width: 33.33%;
-        /* change this to 100/# of divs you want */
-        height: fit-content;
-        padding: 2%;
-        /* background: yellow; */
-        float: left;
-    }
-
-    div.fullScreenBlock {
-        /* background-color: #A7AAC2; */
-        background-color: #ECECEF;
-        overflow: hidden;
-        margin: 0px;
-        width: 100%;
-        /* height: 500px; */
-        height: fit-content;
-    }
-
-    a.navBar {
-        color: white
-    }
-
-    .companyColor {
-        color: #FFC107;
-    }
-
-    /* @media only screen and (min-width: 993px) {
-        nav a.button-collapse {
-            display: block;
-        }
-    } */
-
-    img {
-        object-fit: cover;
-    }
-</style>
 
 <body>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/static/js/materialize.min.js"></script> {% include "navigationBar.html" %}
 
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo companyColor">Logo</a>
-                <a href="#" data-activates="mobile-navbar" class="button-collapse">
-                    <i class="material-icons companyColor">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="#homeSection" class="waves-effect waves-teal navBar tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
-                            data-target="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#aboutSection" class="waves-effect waves-teal tooltipped" data-position="bottom" data-tooltip="I am a tooltip" data-target="about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contactUsSection" class="waves-effect waves-teal tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
-                            data-target="contactUs">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="imgbox scrollspy" id="homeSection">
+        <img class="center-fit" src='/static/imgs/Squirrel Header.png'>
     </div>
 
-    <ul class="side-nav" id="mobile-navbar">
-        <li>
-            <a href="#homeSection" class="waves-effect waves-teal navBar" data-target="home" style="color:black">Home</a>
-        </li>
-        <li>
-            <a href="#aboutSection" class="waves-effect waves-teal navBar" data-target="about" style="color:black">About</a>
-        </li>
-        <li>
-            <a href="#contactUsSection" class="waves-effect waves-teal navBar" data-target="contactUs" style="color:black">Contact Us</a>
-        </li>
-    </ul>
-
-    <div class="fullScreenBlock scrollspy" id="homeSection">
-        <!-- <img src="/static/imgs/sunset.jpg" style:"object-fit:cover"/> -->
-        <p class="nameCompany hiddenElement" style="text-align: center;
-        vertical-align: middle">Abakkus Investing
-            <br/>
-            <span class="hiddenElement" style="color:#FFC107; font-size: 1cm; font-weight: 200">
-                Believe in the Basics
-            </span>
-        </p>
-
-
-        <!-- </div> -->
-    </div>
     <div class="fullScreenBlock scrollspy" id="aboutSection">
-        <div name="info-cards" style="padding:3%">
-            <ul class="collapsible">
+        <h4 style="text-align: center; padding-top: 2%;">Frequently Asked Questions (FAQs)</h4>
+        <div name="info-cards" style="padding: 2%">
+            <ul class="collapsible z-depth-2">
                 <li>
                     <div class="collapsible-header">
                         <i class="material-icons">perm_identity</i>Who are we?</div>
                     <div class="collapsible-body">
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac purus non mi auctor pharetra
+                            non in nibh. Sed at erat a eros mollis tincidunt. Aenean aliquet tortor nisl, at volutpat erat
+                            bibendum vel. Pellentesque pellentesque tellus nec sodales finibus. Nam hendrerit finibus erat,
+                            eu hendrerit augue convallis sit amet. Fusce imperdiet cursus massa ut vehicula. Pellentesque
+                            at lacus eros. Donec auctor tempor felis, eget pellentesque ante eleifend et. Proin eget magna
+                            vitae purus egestas fermentum eu eu erat. In commodo molestie erat, id elementum felis gravida
+                            faucibus. Aenean vel nunc eu leo volutpat interdum at nec metus. Maecenas vitae ex id odio sollicitudin
+                            sollicitudin a a erat. Nullam tortor massa, interdum id tempus vel, consectetur sed lacus. Etiam
+                            tristique dignissim mi, nec placerat diam varius vitae. Sed id vulputate nibh. </span>
                     </div>
                 </li>
                 <li>
@@ -144,64 +52,72 @@
                         <span>Lorem ipsum dolor sit amet.</span>
                     </div>
                 </li>
+                <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons">perm_identity</i>Who are we?</div>
+                    <div class="collapsible-body">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons">star</i>What do we do?</div>
+                    <div class="collapsible-body">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons">person_add</i>Where can I apply to join the team?</div>
+                    <div class="collapsible-body">
+                        <span>You can email your CV to hr@abakkusinvest.com. You can aslo follow us on Facebook, Twitter
+                            and LinkedIn to stay up to date on future opportunities.</span>
+                    </div>
+                </li>
             </ul>
         </div>
 
     </div>
-    <div class="fullScreenBlock scrollspy" id="contactUsSection">
-        <p>CONTACT</p>
-        <div class="division"></div>
+    <div class="fullScreenBlock scrollspy" id="newsletterRegistration" style="padding: 2%">
+        <h4 style="text-align: center;">Sign Up For Our Newsletter</h4>
+        <h5 style="text-align: center;">Updates and Insights delivered directly to your mailbox.</h5>
+
+        <div class="row">
+            <form class=" col s6 offset-s3 " action="/newsLetterRegistration " method="POST ">
+                <div class="card z-depth-2" style="height: fit-content">
+                    <div class="row " style="padding:2% ">
+                        <div class="input-field col s12 m3 l3 ">
+                            <!-- <i class="material-icons prefix ">phone</i> -->
+                            <input id="name " name="name " type="text " class="validate ">
+                            <label for="name ">Name</label>
+                        </div>
+
+                        <div class="input-field col s12 m5 l5 ">
+                            <!-- <i class="material-icons prefix ">phone</i> -->
+                            <input id="email_address " name="email_address " type="text " class="validate ">
+                            <label for="email_address ">Email Address</label>
+                        </div>
+                        <button class="btn waves-effect waves-light col s3 m1 l1 " type="submit " name="action ">Submit
+                        </button>
+                    </div>
+            </form>
+            </div>
+        </div>
     </div>
+    <!-- Add disclaimer about data usage and email address usage -->
 </body>
 
-<footer class="page-footer" id="footer-top">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="#!">Link 4</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright" id="footer-bottom">
-        <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-    </div>
-</footer>
+{% include "footer.html" %}
 
 <script>
-
-    $(".nav-wrapper").css("background-color", "#1D2668");
-    $(".nav-wrapper").css("padding-left", '0.75cm');
-    $(".nav-wrapper").css("padding-right", "0.75cm");
-    $("#aboutSection").css("background-color", "white");
-    $("#footer-top").css("background-color", "#797EA4");
-    $("#footer-bottom").css("background-color", "#4B5286");
+    $("#newsletterRegistration").css("background-color", "#ECECEF");
+    $(document).ready(function () {
+        $(".collapsible ").collapsible();
+        $('.scrollspy').scrollSpy();
+    });
 
     $(document).ready(function () {
-        $(".hiddenElement").fadeIn(4000);
-        $(".button-collapse").sideNav();
-        $('.scrollspy').scrollSpy();
-        $(".collapsible").collapsible();
+        $(".hiddenElement ").fadeIn(4000);
     }, 4000);
 
 </script>

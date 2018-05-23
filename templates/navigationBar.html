@@ -1,32 +1,62 @@
-<style>
-    .topnav {
-        overflow: hidden;
-        background-color: blue;
-        opacity: 50%;
-    }
-
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .topnav a:hover {
-        background-color: #ea4c88;
-        color: black;
-    }
-
-    .topnav a.active {
-        background-color: #ea4c88;
-        color: white;
-    }
-</style>
-
-<div class="topnav">
-    <a href='/home' style="text-decoration:none;">
-        Home
-    </a>
+<ul id="dropdownAbout" class="dropdown-content">
+    <li>
+        <a href="/about#ourstory" style="color: #1D2668;">Our Story</a>
+    </li>
+    <li>
+        <a href="/about#invest" style="color: #1D2668;">Investment Approach</a>
+    </li>
+</ul>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <img class="brand-logo" src="/static/imgs/Abakkus Logo.jpg" style="object-fit:contain; height:inherit;" />
+            <a href="#" data-activates="mobile-navbar" class="button-collapse">
+                <i class="material-icons companyColor">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/" class="waves-effect waves-abakkus navBar tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Home</a>
+                </li>
+                <li>
+                    <a href="#!" class="dropdown-trigger navBar" data-activates="dropdownAbout">About
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/people" class="waves-effect waves-abakkus navBar tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
+                        data-target="about">People</a>
+                </li>
+                <li>
+                    <a href="/insights" class="waves-effect waves-abakkus navBar tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
+                        data-target="about">Insights/Blog</a>
+                </li>
+                <li>
+                    <a href="/contactUs" class="waves-effect waves-abakkus navBar tooltipped" data-position="bottom" data-tooltip="I am a tooltip"
+                        data-target="contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
+
+{% include "sideNavigationBar.html" %}
+
+<script>
+
+    $(".nav-wrapper").css("background-color", "#FFFFFF");
+    $(".nav-wrapper").css("padding-left", '0.75cm');
+    $(".nav-wrapper").css("padding-right", "0.75cm");
+
+    $(document).ready(function () {
+        $(".dropdown-trigger").dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
+    });
+
+</script>

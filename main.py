@@ -15,6 +15,19 @@ def aboutPage():
 def contactUsPage(): 
     return render_template('contact.html')
 
+@app.route('/people')
+def peoplePage():
+    return render_template('people.html')
+
+@app.route('/newsLetterRegistration', methods=['POST', 'GET'])
+def gotNewPerson():
+    print(request.args.get('first_name'))
+    return redirect(url_for('homePage'))
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 app.secret_key = os.urandom(24)
 #Run the app on localhost port 5000
 #debug = True -> you don't have to restart flask 
