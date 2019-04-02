@@ -4267,11 +4267,10 @@ nav .button-collapse i {
 
 nav .brand-logo {
   position: absolute;
-  color: #FFC107;
-  font-weight: 900;
+  color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  padding-left: 0;
+  padding: 0;
 }
 
 nav .brand-logo.center {
@@ -5554,10 +5553,6 @@ button.btn-floating {
 
 .waves-effect.waves-yellow .waves-ripple {
   background-color: rgba(255, 235, 59, 0.7);
-}
-
-.waves-effect.waves-abakkus .waves-ripple {
-  background-color: #FF6600;
 }
 
 .waves-effect.waves-orange .waves-ripple {
