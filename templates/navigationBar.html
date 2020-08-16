@@ -1,0 +1,59 @@
+<ul id="dropdownAbout" class="dropdown-content">
+    <li>
+        <a href="/about#ourstory" style="color: #1D2668;">Our Story</a>
+    </li>
+    <li>
+        <a href="/about#invest" style="color: #1D2668;">Investment Approach</a>
+    </li>
+</ul>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <img class="brand-logo" src="/static/imgs/Abakkus Logo.jpg" style="object-fit:contain; height:inherit;" />
+            <a href="#" data-activates="mobile-navbar" class="button-collapse">
+                <i class="material-icons companyColor">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html" class="waves-effect waves-abakkus navBar">Home</a>
+                </li>
+                <li>
+                    <a href="/about" class="dropdown-trigger waves-effect waves-abakkus navBar" data-activates="dropdownAbout">About
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/people" class="waves-effect waves-abakkus navBar">People</a>
+                </li>
+                <li>
+                    <a href="/insights" class="waves-effect waves-abakkus navBar">Insights/Blog</a>
+                </li>
+                <li>
+                    <a href="#footer" class="waves-effect waves-abakkus navBar">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+{% include "sideNavigationBar.html" %}
+
+<script>
+
+    $(".nav-wrapper").css("background-color", "#FFFFFF");
+    $(".nav-wrapper").css("padding-left", '0.75cm');
+    $(".nav-wrapper").css("padding-right", "0.75cm");
+
+    $(document).ready(function () {
+        $(".dropdown-trigger").dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
+    });
+
+</script>

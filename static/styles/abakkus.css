@@ -1,0 +1,88 @@
+body {
+    background-color: white;
+    /* overflow: hidden; */
+    margin: 0px;
+    height:100%;
+}
+
+.hiddenElement {
+    display: none;
+}
+
+.nameCompany {
+    color: #1D2668;
+    font-weight: 900;
+    padding-top: 1cm;
+    font-size: 2cm;
+    text-align: center;
+}
+
+div.division {
+    width: 25%;
+    /* change this to 100/# of divs you want */
+    height: fit-content;
+    padding: 32px;
+    /* background: yellow; */
+    float: left;
+}
+
+div.peopleDivision {
+    width: 20%;
+}
+
+div.fullScreenBlock {
+    /* background-color: #A7AAC2; */
+    background-color: white;
+    overflow: hidden;
+    margin: 0px;
+    width: 100%;
+    padding: 8px;
+    /* height: 500px; */
+    height: fit-content;
+}
+
+a.navBar {
+    color: #1D2668;
+}
+
+.companyColor {
+    color: #1D2668;
+}
+
+/* @media only screen and (min-width: 993px) {
+    nav a.button-collapse {
+        display: block;
+    }
+} */
+
+img {
+    object-fit: cover;
+}
+
+.map-card {
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+
+.imgbox {
+    display: grid;
+    height: fit-content;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0px;
+}
+
+.ErrorPageBackground {
+    /* The image used */
+    background-image: url("/static/imgs/404.jpg");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
