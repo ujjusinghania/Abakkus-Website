@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import AbakkusNavbar from './Navbar.js';
+import AbakkusNavbar from './AbakkusNavbar.js';
 
 const peopleData = require('./peopleConfig.json');
 
