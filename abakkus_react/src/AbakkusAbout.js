@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 import AbakkusNavbar from './AbakkusNavbar.js';
 
-const peopleData = require('./peopleConfig.json');
-
-class AboutPage extends Component {
+class AbakkusAbout extends Component {
     constructor(props) {
         super(props);
     }
@@ -19,4 +17,4 @@ class AboutPage extends Component {
     }
 }
 
-export default AboutPage;
+export default AbakkusAbout;

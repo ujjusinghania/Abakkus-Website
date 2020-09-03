@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
-import AboutPage from './About.js';
+import AbakkusAbout from './AbakkusAbout.js';
+import AbakkusPeople from './AbakkusPeople.js';
 
 class Routes extends Component {
     constructor(props) {
@@ -10,8 +11,9 @@ class Routes extends Component {
 
     render() {
         return (
-            <BrowserRouter forceRefres={true}>
-                <Route path='/' component={ AboutPage } />
+            <BrowserRouter>
+                <Route path='/about' component={ AbakkusAbout } />
+                <Route path='/people' component={ AbakkusPeople } />
             </BrowserRouter>
         )
     }

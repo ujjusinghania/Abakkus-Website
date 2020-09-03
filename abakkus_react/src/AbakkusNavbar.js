@@ -16,7 +16,7 @@ class AbakkusNavbar extends Component {
 
     render() {
         return (
-            <Navbar fixed="top" active={this.state.burgerEnabled}>
+            <Navbar fixed="top" active={this.state.burgerEnabled} has-shadow={true}>
                 <Navbar.Brand style={{background: 'red'}}>
                     <Navbar.Item renderAs="a" href="#" style={{ background: 'blue' }}>
 
