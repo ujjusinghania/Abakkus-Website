@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 
 import { Card, Media, Image, Content, Heading } from 'react-bulma-components';
 
+import AbakkusPeoplePanel from './AbakkusPeoplePanel.js';
+
 class AbakkusPeopleCard extends Component {
     constructor(props) {
         super(props);
+        console.log(this.props)
     }
 
     render() {
         return (
-            <Card>
-                <Card.Image size="4by3" src="http://bulma.io/images/placeholders/1280x960.png" />
+            <Card onClick={ () => { console.log('Hello World') }}>
+                <Card.Image size="4by3" src={this.props.img_url} />
                 <Card.Content>
                     <Media>
                         <Media.Item>

@@ -13,29 +13,54 @@ class AbakkusPeople extends Component {
         this.state = {
 
         }
+    }
 
-        console.log(document.body.scrollHeight)
+    returnRows() {
+        while (peopleConfig.length % 4 != 0) {
+            peopleConfig.push({});
+        }
+
+        var peoplePage = [];
+
+        for (let peopleIndex = 0; peopleIndex < peopleConfig.length; peopleIndex += 4) {
+            peoplePage.push(this.getPeopleCards(peopleConfig.slice(peopleIndex, peopleIndex + 4)))
+        }
+
+        return peoplePage;
+    }
+
+    getPeopleCards(rowPeople) {
+        var rowPeopleCards = [];
+        rowPeople.map((person, index) => {
+            if (person.name === undefined) {
+                rowPeopleCards.push(<Columns.Column style={{ margin: '16px' }} />);
+            }
+            else {
+                rowPeopleCards.push(
+                    <Columns.Column style={{ margin: '16px' }}>
+                        <AbakkusPeopleCard name={person.name} position={person.position} description={person.description} img_url={person.img_url} />
+                    </Columns.Column>
+                    )
+            }
+        })
+        return (
+            <Columns style = {{ marginTop: '24px', marginRight: '24px', marginLeft: '24px' }}>
+            { 
+                rowPeopleCards.map((personCard) => {
+                    return personCard;
+                })
+            }
+            </Columns>
+        );
     }
 
     render() {
         return (
             <div>
                 <AbakkusNavbar />
-                <Columns style={{ margin: '32px', background: '#124812' }}>
-                    <Columns.Column style={{ background: '#123525', margin: '16px' }}>
-                        <AbakkusPeopleCard name="Ujjwal Singhania" />
-                    </Columns.Column>
-                    <Columns.Column style={{ background: '#123525', margin: '16px' }}>
-                        <AbakkusPeopleCard name="Ujjwal Singhania" />
-                    </Columns.Column>
-                    <Columns.Column style={{ background: '#123525', margin: '16px' }}>
-                        <AbakkusPeopleCard name="Ujjwal Singhania" />
-                    </Columns.Column>
-                    <Columns.Column style={{ background: '#123525', margin: '16px' }}>
-                        <AbakkusPeopleCard name="Ujjwal Singhania" />
-                    </Columns.Column>
-
-                </Columns>
+                {
+                    this.returnRows()
+                }
             </div>
         )
     }
