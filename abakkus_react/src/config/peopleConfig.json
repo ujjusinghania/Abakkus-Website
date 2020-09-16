@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Sunil Singhania",
+        "position": "Founder",
+        "description": "Sunil Singhania, CFA, is the Founder of Abakkus Asset Management, LLP, an India-focused Asset Management Company he established in 2018. Prior to this, in his role as Global Head – Equities at Reliance Capital Ltd., he oversaw equity assets and provided strategic inputs across Reliance Capital Group of companies including asset management, insurance, AIF and offshore assets. And as CIO – Equities, Singhania led Reliance Mutual Fund equity schemes to be rated amongst the best. Reliance Growth Fund grew over 100 times in less than 22 years under Singhania’s leadership. Furthermore, he led Reliance Nippon Life Asset Management Ltd.’s international efforts and was instrumental in launching India funds in Japan, South Korea, and the UK, besides managing mandates from institutional investors based in the US, Singapore, and other countries. Singhania was the Promoter of The Association of NSE Members of India; a body of stock brokers. He is also the first individual from India to be elected as a member of the CFA Institute Board of Governors and currently serves as the Chair of the Investment Committee and as a member of the Nominating Committee. He also sat on CFA Institute’s Standards of Practice Council for six years, and was the Founder of the Indian Association of Investment Professionals (now CFA Society India) and served as its President for eight years. Singhania graduated in commerce from the Bombay University and completed his Chartered Accountancy from the ICAI, Delhi with an all India rank. He has also earned the right to use the Chartered Financial Analyst designation, conferred by CFA Institute. Having travelled extensively across the world, Singhania has also attended many global investment conferences and seminars.",
+        "twitter": "https://twitter.com/SunilBSinghania",
+        "linkedin": "https://www.linkedin.com/in/sunilsinghania/",
+        "img_url": "https://raw.githubusercontent.com/ujjusinghania/Abakkus-Website/react-js/abakkus_react/src/imgs/people/sunil.jpg?token=ABA4QQLCYKCVL25AN2OLAJK7LWZ3W"
+    },
+    {
+        "name": "Biharilal Deora",
+        "position": "Director",
+        "description": "Biharilal Deora, FCA, CFA, CIPM is an accomplished finance professional with a global market perspective. Prior to joining Abakkus, he was managing corporate, family office and university clients, bringing an investment expertise that spans all asset classes. He is also a subject matter expert across a range of tax, accounting, pension, risk management, and capital market policies. Mr. Deora is a regular visiting faculty member for advanced finance programs and is currently pursuing a PhD with Symbiosis University.  He began his career as a financial analyst - at Credit Suisse and Fidelity Investments amongst others - where he gained knowledge across a range of sectors, including oil and gas and commodities in the US, Europe and Asia and holds a masters in Commerce degree from Veer Narmad South Gujarat University, amongst being a Rankholder chartered accountant, Certified Financial planner, CFA Charterholders and and other certificates.",
+        "twitter": "https://twitter.com/b_deora",
+        "linkedin": "https://www.linkedin.com/in/deora/",
+        "img_url": "https://raw.githubusercontent.com/ujjusinghania/Abakkus-Website/react-js/abakkus_react/src/imgs/people/BD.jpg?token=ABA4QQJDYY64SVFPBERPD3S7LWZUQ"
+    },
+    {
+        "name": "Aman Chowhan",
+        "position": "Fund Manager",
+        "description": "Aman has over 17 years of Indian equity experience. Prior to joining Abakkus he was Portfolio manager for all local and offshore schemes for PMS division of Reliance Asset Management. Having worked at Singapore office of Reliance, Aman brings along a regional and global perspective in investing and has strong track record across – benchmark, absolute long and long-short strategies. Before joining Reliance in 2005 he was associated as research analyst with TAIB securities, Tata TD waterhouse and other brokerage firms. Aman holds an MBA degree from Mumbai University.",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/aman-chowhan-90a53429/",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Archan Thakore",
+        "position": "Research Analyst",
+        "description": "Archan Thakore has overall experience of around 8 years. Prior to joining Abakkus, he has worked with Reliance Nippon Life Asset Management and Mirae Asset Mutual Fund in Product Management for PMS, AIF and Mutual Fund products. He also has experience in Equity Research, Quantitative Analysis and Information Technology working with companies such as Barclays, Morgan Stanley and Metasys Software. He is a Computer Engineer from Mumbai University and is a candidate for Level 3 of CFA Examination.",
+        "twitter": "https://twitter.com/archanthakore",
+        "linkedin": "https://www.linkedin.com/in/archan-thakore-6816051a/",
+        "img_url": "./imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Chetan Vora",
+        "position": "Research Analyst",
+        "description": "Chetan Vora has over 10 years of experience in Indian Equity Research and total of 15 years of professional experience. Prior to joining Abakkus, he was working as a senior research analyst with ValueQuest Investment Advisors (Research arm for the PMS and Family Office) for closed to 5 years wherein he covered comprehensively mid-cap and small cap companies. He was also associated Edelweiss Securities (Institutional Research) wherein he used to track Auto and Auto Ancillary sector. During the earlier years of his career he has also worked with Price Waterhouse in the Financial Services Assurance Vertical. With his analytical abilities, process driven approach he brings fresh perspective and insights to the research work. Chetan is Chartered Accountant by profession and completed his graduation from University of Mumbai.",
+        "twitter": "https://twitter.com/chetanvora_25",
+        "linkedin": "https://www.linkedin.com/in/chetan-vora-8a213719",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Rahul Veera",
+        "position": "Research Analyst",
+        "description": "Rahul Veera is an Investment analyst with over 8 years of equity research experience. Rahul has spent the majority of his early career in investment selection of smallcap and midcap companies with strong focus on bottom-up research. He believes that patience, independent thinking, and a long-term outlook are essential to achieving good returns. Before joining Abakkus asset management, Rahul served as an equity research analyst for organizations like Morgan Stanley, Edelweiss and Elara capital. Rahul attended IIM Calcutta with concentrations in Finance.",
+        "twitter": "https://twitter.com/RahulVeera6/",
+        "linkedin": "https://www.linkedin.com/in/rahul-veera-61788359/",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Akshay Shah",
+        "position": "Equity Dealer",
+        "description": "Akshay has around a decade of experience in investment industry including Equity Dealing, Trading, Risk Management, Surveillance and Trade Settlement as well as financial modelling. At Abakkus, he is responsible for Equity Dealing. Prior to this he has worked with Elara Capital and First Global Securities and Indiabulls Securities. Akshay is an MBA in Finance and has cleared level 1 of CFA Examination. He has done his Bachelors in Commerce from University of Mumbai.",
+        "twitter": "",
+        "linkedin": "",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Rhutu Mantri",
+        "position": "Research Associate",
+        "description": "Rhutu Mantri is a Research Associate with over 2 years of experience in the Equity Market. Rhutu has done her Bachelors of Business Administration from Kingston University, London and her Post Graduate from S.P. Jain Institute of Management and Research, Mumbai. Rhutu has previously worked with Prabhudas Lilladher Pvt. Ltd. in the portfolio management services division where she was responsible for all aspects of the research process and financial modelling with a focus on companies in the small and mid size space.",
+        "twitter": "https://twitter.com/rhutumantri",
+        "linkedin": "https://www.linkedin.com/in/rhutu-mantri-03080332/",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Kislay Upadhyay",
+        "position": "Research Associate",
+        "description": "Kislay Upadhyay is a Research Associate with over 3 years of experience in Equity Investments. Prior to joining Abakkus, Kislay worked with Ambit Asset Management where he co-managed a long-only PMS in a 2-member team, working directly with the Fund Manager. He specifically looked into BFSI investments in mid and large size space. He also worked extensively on Indian Equity Strategy, and was responsible for most of the research work in bestseller book 'Coffee Can Investing'. He has also worked with Muthoot Finance and Synergy Consulting as Investment Analyst. Kislay has done his engineering from Visvesvaraya Technological University and PGDM from Indian Institute of Management Lucknow (Finance).",
+        "twitter": "https://twitter.com/KislayU",
+        "linkedin": "https://www.linkedin.com/in/kislay-upadhyay-05b97751",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Foram Bauva",
+        "position": "Research Associate",
+        "description": "Foram Bauva is currently working as a Research Associate. Her responsibilities include gathering data from primary and secondary sources of information, organizing and analysing this material, and preparing research reports. Foram graduated from N.M College and completed her Chartered Accountancy from the ICAI, Mumbai in 2017. Prior to this role, she has worked at K.N Gandhi & Co as a Statutory Auditor for almost 4 years in the Construction Industry having handled major clients such as Raheja Group of Companies, Lokhandwala Constructions, Gundecha group and various others. Going forward, she desires to specialise in the field of Investment Management through continuous focus, devotion and self-learning.",
+        "twitter": "https://twitter.com/Foram64760643",
+        "linkedin": "https://www.linkedin.com/in/foram-bauva-ca-9b6584128/",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Rajyavardhan Sonthalia",
+        "position": "Research Associate",
+        "description": "Before joining Abakkus, Rajya was researching the micro and mid cap space at Crest Capital. Prior to this, he has trained at Enam Holdings, Axis Capital and HDFC AMC. He has worked in sectors like cement, steel, aviation and BFS. He finished his Bachelors of Science at Babson College after which he completed a certification in Corporate Finance from Harvard.",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/rajyavardhan-sonthalia-598019169/",
+        "img_url": "imgs/people/sunil.jpg"
+    },
+    {
+        "name": "Amruta Kurane",
+        "position": "Office Manager",
+        "description": "Amruta Kurane is currently working as an Admin and Office manager. Her role is to create and maintain a pleasant work environment while ensuring high level of organizational effectiveness, communication and safety. Amruta graduated from Mumbai University and has done her diploma in computer hardware, software and networking. In addition to this, she has also completed her diploma in Aviation. Amruta previously worked with Konark Advisers as an office manager where she was responsible for ensuring efficient functioning of a office by conducting a range of administrative, financial and managerial tasks. She forms a delicate balance of being friendly and approachable and being able to make quick decisions to keep the office functioning smoothly.",
+        "twitter": "https://twitter.com/Angelamu20",
+        "linkedin": "https://www.linkedin.com/in/amruta-kurane-a7849954/",
+        "img_url": "imgs/people/sunil.jpg"
+    }
+]

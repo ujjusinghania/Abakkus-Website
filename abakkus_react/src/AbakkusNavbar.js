@@ -25,10 +25,10 @@ class AbakkusNavbar extends Component {
                 </Navbar.Brand>
                 <Navbar.Menu>
                     <Navbar.Container position="end">
-                        <Navbar.Item>Home</Navbar.Item>
-                        <Navbar.Item>About</Navbar.Item>
-                        <Navbar.Item>People</Navbar.Item>
-                        <Navbar.Item>Blog</Navbar.Item>
+                        <Navbar.Item href="/">Home</Navbar.Item>
+                        <Navbar.Item href="/about">About</Navbar.Item>
+                        <Navbar.Item href="/people">People</Navbar.Item>
+                        <Navbar.Item href="https://blog.abakkusinvest.com/" target="_blank">Blog</Navbar.Item>
                         <Navbar.Item dropdown hoverable href="#">
                             <Navbar.Link arrowless={false}>
                                 Investor
