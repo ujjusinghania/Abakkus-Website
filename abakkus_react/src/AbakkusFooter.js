@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Footer, Columns, Container, Tile, Heading } from 'react-bulma-components';
+import { Footer, Container, Tile, Heading } from 'react-bulma-components';
 
 class AbakkusFooter extends Component {
     render() {
