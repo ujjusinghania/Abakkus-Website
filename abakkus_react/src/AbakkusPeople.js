@@ -9,13 +9,6 @@ import { Columns } from 'react-bulma-components';
 const peopleConfig = require('./config/peopleConfig.json');
 
 class AbakkusPeople extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    }
-
     returnRows() {
         while (peopleConfig.length % 4 !== 0) {
             peopleConfig.push({});

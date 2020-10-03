@@ -25,10 +25,38 @@ class AbakkusNavbar extends Component {
                 </Navbar.Brand>
                 <Navbar.Menu>
                     <Navbar.Container position="end">
-                        <Navbar.Item href="/">Home</Navbar.Item>
+                        <Navbar.Item href="/home">Home</Navbar.Item>
                         <Navbar.Item href="/about">About</Navbar.Item>
                         <Navbar.Item href="/people">People</Navbar.Item>
                         <Navbar.Item href="https://blog.abakkusinvest.com/" target="_blank">Blog</Navbar.Item>
+                        <Navbar.Item dropdown hoverable href="#">
+                            <Navbar.Link arrowless={false}>
+                                Products
+                            </Navbar.Link>
+                            <Navbar.Dropdown>
+                                <Navbar.Item href="#" renderAs='p'>
+                                    Alternative Investment Funds
+                                </Navbar.Item>
+                                <Navbar.Divider/>
+                                <Navbar.Item href="/product/abakkus_growth_fund_I">
+                                    Abakkus Growth Fund - I
+                                </Navbar.Item>
+                                <Navbar.Item href="#">
+                                    Abakkus Emerging Opportunities Fund - I 
+                                </Navbar.Item>
+                                <Navbar.Divider/>
+                                <Navbar.Item href="#" renderAs='p'>
+                                    Portfolio Management Services
+                                </Navbar.Item>
+                                <Navbar.Divider/>
+                                <Navbar.Item href="#">
+                                    Abakkus All Cap Approach
+                                </Navbar.Item>
+                                <Navbar.Item href="#">
+                                    Abakkus Emerging Opportunities Fund - I 
+                                </Navbar.Item>
+                            </Navbar.Dropdown>
+                        </Navbar.Item>
                         <Navbar.Item dropdown hoverable href="#">
                             <Navbar.Link arrowless={false}>
                                 Investor

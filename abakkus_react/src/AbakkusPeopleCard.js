@@ -9,11 +9,9 @@ import AbakkusPeoplePanel from './AbakkusPeoplePanel.js';
 class AbakkusPeopleCard extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props)
-
         this.state = {
             panelOpen: false
-        }
+        };
     }
 
     render() {

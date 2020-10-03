@@ -6,10 +6,6 @@ import AbakkusNavbar from './AbakkusNavbar.js';
 import AbakkusFooter from './AbakkusFooter.js';
 
 class AbakkusAbout extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>

@@ -1,0 +1,7 @@
+FullPageBackground {
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip: rect(1000px, 0, 1000px, 20px);
+}
