@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 
-import {
-	Heading,
-	Container,
-	Tile,
-	Section,
-	Box,
-	Table,
-} from "react-bulma-components";
+import { Heading, Tile, Section, Box, Table } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
@@ -18,9 +11,42 @@ class AbakkusProduct extends Component {
 		this.state = {};
 	}
 
+	getTopTenStocks(abakkusProduct) {
+		if (Object.keys(abakkusProduct.top_10).length !== 0) {
+			return (
+				<Tile kind="parent" size={5}>
+					<Tile renderAs="article" kind="child" notification color="light">
+						<div className="content">
+							<Heading>Top Ten</Heading>
+							<div className="content">
+								<Table bordered={true}>
+									<thead>
+										<tr>
+											<th>Stock Name</th>
+											<th>Percentage</th>
+										</tr>
+									</thead>
+									<tbody>
+										{Object.keys(abakkusProduct.top_10).map((key, index) => (
+											<tr>
+												<td>{key}</td>
+												<td>{abakkusProduct.top_10[key]}</td>
+											</tr>
+										))}
+									</tbody>
+								</Table>
+							</div>
+						</div>
+					</Tile>
+				</Tile>
+			);
+		}
+		return;
+	}
+
 	render() {
-        const abakkusProduct = this.props.jsonObj;
-        console.log(Object.keys(abakkusProduct.top_10))
+		const abakkusProduct = this.props.jsonObj;
+		console.log(Object.keys(abakkusProduct.top_10));
 		return (
 			<div>
 				<AbakkusNavbar />
@@ -28,8 +54,20 @@ class AbakkusProduct extends Component {
 					<Section>
 						<Box style={{ marginLeft: "32px", marginRight: "32px" }}>
 							<Tile kind="ancestor" vertical>
+								<Tile kind="parent" style={{ marginBottom: '-16px'}}>
+									<Tile kind="parent">
+										<Tile
+											renderAs="article"
+											kind="child"
+											notification
+											color="danger"
+										>
+											<Heading>{abakkusProduct.name}</Heading>
+										</Tile>
+									</Tile>
+								</Tile>
 								<Tile kind="parent">
-									<Tile size={7} vertical>
+									<Tile vertical>
 										<Tile>
 											<Tile kind="parent" vertical>
 												<Tile
@@ -38,7 +76,6 @@ class AbakkusProduct extends Component {
 													notification
 													color="primary"
 												>
-													<Heading>{abakkusProduct.name}</Heading>
 													<Heading subtitle>{abakkusProduct.brief}</Heading>
 												</Tile>
 												<Tile
@@ -88,51 +125,21 @@ class AbakkusProduct extends Component {
 											</Tile>
 										</Tile>
 									</Tile>
+									{this.getTopTenStocks(abakkusProduct)}
+								</Tile>
+								<Tile kind="parent" style={{ marginTop: '-16px'}}>
 									<Tile kind="parent">
 										<Tile
 											renderAs="article"
 											kind="child"
 											notification
-											color="light"
+											color="success"
 										>
 											<div className="content">
-												<Heading>Top Ten</Heading>
-												<div className="content">
-													<Table bordered={true}>
-														<thead>
-															<tr>
-																<th>
-																	Stock Name
-																</th>
-																<th>Percentage</th>
-															</tr>
-														</thead>
-                                                        <tbody>
-                                                            {
-                                                            Object.keys(abakkusProduct.top_10).map((key, index) => (
-                                                                <tr>
-                                                                    <td>{key}</td>
-                                                                    <td>{abakkusProduct.top_10[key]}</td>
-                                                                </tr>
-                                                            ))}
-                                                        </tbody>
-													</Table>
-												</div>
+												<Heading subtitle>Disclaimer</Heading>
+												<p>{abakkusProduct.disclaimer}</p>
 											</div>
 										</Tile>
-									</Tile>
-								</Tile>
-								<Tile kind="parent">
-									<Tile
-										renderAs="article"
-										kind="child"
-										notification
-										color="success"
-									>
-										<div className="content">
-											<Heading subtitle>Disclaimer</Heading>
-											<p>{abakkusProduct.disclaimer}</p>
-										</div>
 									</Tile>
 								</Tile>
 							</Tile>

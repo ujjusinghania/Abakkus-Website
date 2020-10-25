@@ -51,10 +51,10 @@ class AbakkusNavbar extends Component {
                                     Alternative Investment Funds
                                 </Navbar.Item>
                                 <Navbar.Divider/>
-                                <Navbar.Item href="/product/abakkus_growth_fund_I">
+                                <Navbar.Item href="/product/aif/abakkus_growth_fund_I">
                                     Abakkus Growth Fund - I
                                 </Navbar.Item>
-                                <Navbar.Item href="#">
+                                <Navbar.Item href="/product/aif/abakkus_emerging_opportunities_fund_I">
                                     Abakkus Emerging Opportunities Fund - I 
                                 </Navbar.Item>
                                 <Navbar.Divider/>
@@ -62,10 +62,10 @@ class AbakkusNavbar extends Component {
                                     Portfolio Management Services
                                 </Navbar.Item>
                                 <Navbar.Divider/>
-                                <Navbar.Item href="#">
+                                <Navbar.Item href="/product/pms/abakkus_all_cap_approach">
                                     Abakkus All Cap Approach
                                 </Navbar.Item>
-                                <Navbar.Item href="#">
+                                <Navbar.Item href="/product/pms/abakkus_emerging_opportunities_fund_I">
                                     Abakkus Emerging Opportunities Fund - I 
                                 </Navbar.Item>
                             </Navbar.Dropdown>
