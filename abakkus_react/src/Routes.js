@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import AbakkusHome from './AbakkusHome.js';
 import AbakkusAbout from './AbakkusAbout.js';
@@ -22,15 +22,18 @@ class Routes extends Component {
     render() {
         return (
             <BrowserRouter>
-                <Route exact path='/' component={ AbakkusHome } />
-                <Route path='/about' component={ AbakkusAbout } />
-                <Route path='/people' component={ AbakkusPeople } />
-                <Route path='/termsandconditions' component={ AbakkusTermsAndConditions } />
-                <Route path='/privacy' component={ AbakkusPrivacy } />
-                <Route path='/product/aif/abakkus_growth_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_growth_fund_I"] } />)} />
-                <Route path='/product/aif/abakkus_emerging_opportunities_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_emerging_opportunities_fund_I"] } />)} />
-                <Route path='/product/pms/abakkus_all_cap_approach' render={ () => ( <AbakkusProduct jsonObj = { productsPMSJson["abakkus_all_cap_approach"] } />)} />
-                <Route path='/product/pms/abakkus_emerging_opportunities_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsPMSJson["abakkus_emerging_opportunities_fund_I"] } />)} />
+                <Switch>
+                    <Route exact path='/' component={ AbakkusHome } />
+                    <Route path='/about' component={ AbakkusAbout } />
+                    <Route path='/people' component={ AbakkusPeople } />
+                    <Route path='/termsandconditions' component={ AbakkusTermsAndConditions } />
+                    <Route path='/privacy' component={ AbakkusPrivacy } />
+                    <Route path='/product/aif/abakkus_growth_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_growth_fund_I"] } />)} />
+                    <Route path='/product/aif/abakkus_emerging_opportunities_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_emerging_opportunities_fund_I"] } />)} />
+                    <Route path='/product/pms/abakkus_all_cap_approach' render={ () => ( <AbakkusProduct jsonObj = { productsPMSJson["abakkus_all_cap_approach"] } />)} />
+                    <Route path='/product/pms/abakkus_emerging_opportunities_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsPMSJson["abakkus_emerging_opportunities_fund_I"] } />)} />
+                    <Route component={ AbakkusHome } />
+                </Switch>
             </BrowserRouter>
         )
     }
