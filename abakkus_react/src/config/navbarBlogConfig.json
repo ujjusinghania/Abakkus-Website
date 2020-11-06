@@ -1,0 +1,18 @@
+[
+    {
+        "navbarText": "Blog",
+        "urlLink": "https://blog.abakkusinvest.com/"
+    },
+    {
+        "navbarText": "What We Are Reading",
+        "urlLink": "https://blog.abakkusinvest.com/category/wwar-library/"
+    },
+    {
+        "navbarText": "Market Outlook",
+        "urlLink": "https://blog.abakkusinvest.com/category/market-outlook/"
+    },
+    {
+        "navbarText": "In The News",
+        "urlLink": "https://blog.abakkusinvest.com/category/in-the-news/"
+    }
+]

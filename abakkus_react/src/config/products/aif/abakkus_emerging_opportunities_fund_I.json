@@ -1,0 +1,28 @@
+{
+	"name": "Abakkus Emerging Opportunities Fund -  I",
+	"brief": "A close ended category III Alternative Investment Fund",
+	"fund_manager": "Sunil Singhania",
+	"benchmark": "BSE S&P 200",
+	"custodian": "Kotak Mahindra Bank",
+	"strategy": [
+		"Mid-cap biased multi cap diversified portfolio targeted at superior capital gains",
+		"Endeavor to generate alpha and wealth creation over 3-4 years holding period",
+		"Portfolio of 30 - 40 companies, single stock exposure limited to less than 10% and sector exposure limited to below 30%",
+		"Up to 10% exposure in micro caps and sme companies (additional 10 names) to improve returns but at the same time keeping risks low",
+		"Select anchor investments in IPO of companies as a QIB",
+		"No unlisted private equity to ensure liquidity at all times"
+	],
+	"top_10": {
+		"Stock Name A": 10,
+		"Stock Name B": 10,
+		"Stock Name C": 10,
+		"Stock Name D": 10,
+		"Stock Name E": 10,
+		"Stock Name F": 10,
+		"Stock Name G": 10,
+		"Stock Name H": 10,
+		"Stock Name I": 10,
+		"Stock Name J": 10
+	},
+	"disclaimer": "Equity investments are subject to market and other risks and there can be no assurance that the objectives of any of the schemes that may be launched by Abakkus Asset Manager LLP will be achieved. Any prediction, projection or forecast on the economy, stock market, bond market or the economic trends of the markets which are targeted by the Schemes are not necessarily indicative of the future or likely performance. Past performance does not indicate the future performance of the Schemes that may be launched in the future."
+}

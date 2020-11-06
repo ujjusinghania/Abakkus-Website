@@ -1,0 +1,28 @@
+{
+	"name": "Abakkus Emerging Opportunities Fund - I",
+	"brief": "A close ended category III Alternative Investment Fund",
+	"fund_manager": "Sunil Singhania",
+	"benchmark": "BSE S&P 200",
+	"custodian": "HDFC Bank",
+	"strategy": [
+		"Benchmark agnostic diversified portfolio with bias towards mid and small cap",
+		"15:15:15 discipline: Invest predominantly in companies qualifying in at least 2 out of these 3 criteria: >15% ROE, >15% earnings growth, < 15 P/E Ratio",
+		"Typically, pursue 2nd or 3rd player within the sector but at significant discount to the leader",
+		"Fundamental based ideas picked via a bottom up approach",
+		"Endeavor to generate alpha and wealth creation by buying with typically 3-5 years holding period",
+		"Differentiated Portfolio adhering to our “MEETS” Framework"
+	],
+	"top_10": {
+		"Stock Name A": 10,
+		"Stock Name B": 10,
+		"Stock Name C": 10,
+		"Stock Name D": 10,
+		"Stock Name E": 10,
+		"Stock Name F": 10,
+		"Stock Name G": 10,
+		"Stock Name H": 10,
+		"Stock Name I": 10,
+		"Stock Name J": 10
+	},
+	"disclaimer": "Equity investments are subject to market and other risks and there can be no assurance that the objectives of any of the schemes that may be launched by Abakkus Asset Manager LLP will be achieved. Any prediction, projection or forecast on the economy, stock market, bond market or the economic trends of the markets which are targeted by the Schemes are not necessarily indicative of the future or likely performance. Past performance does not indicate the future performance of the Schemes that may be launched in the future."
+}
