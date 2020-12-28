@@ -5,3 +5,7 @@ FullPageBackground {
     background-repeat: no-repeat;
     clip: rect(1000px, 0, 1000px, 20px);
 }
+
+.fillobject {
+    object-fit: cover;
+}
