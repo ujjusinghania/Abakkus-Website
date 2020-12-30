@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Card, Media, Image, Content, Heading } from 'react-bulma-components';
+import { Card, Media, Button, Heading } from 'react-bulma-components';
 
 import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
 
@@ -32,9 +32,9 @@ class AbakkusPeopleCard extends Component {
                     isLightDismiss
                     isOpen={this.state.panelOpen}
                     onDismiss={ () => { this.setState({'panelOpen': false})} }
-                    closeButtonAriaLabel="Close"
                     type={PanelType.medium}
                 >
+                    <Button color="danger" style={{ float: "right" }} onClick={ () => { this.setState({'panelOpen': false})} }>Close</Button>
                     <AbakkusPeoplePanel description={this.props.description} name={this.props.name} position={this.props.position} twitter={this.props.twitter} linkedin={this.props.linkedin}/>
                 </Panel>
             </div>
