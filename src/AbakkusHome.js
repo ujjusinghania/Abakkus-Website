@@ -12,7 +12,7 @@ class AbakkusHome extends Component {
 		return (
 			<div>
 				<AbakkusNavbar />
-				<Image src="https://images.unsplash.com/photo-1533651180995-3b8dcd33e834?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" className="FullPageBackground"/>
+				<Image src="https://www.dropbox.com/s/yf2s9kuzm1y78b1/Abakkus%20Homepage.jpeg?raw=1" className="FullPageBackground"/>
 				<AbakkusFooter />
 			</div>
 		);
