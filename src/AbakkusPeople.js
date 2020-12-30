@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import AbakkusNavbar from './AbakkusNavbar.js';
 import AbakkusPeopleCard from './AbakkusPeopleCard.js';
 import AbakkusFooter from './AbakkusFooter.js';
+import AbakkusAdvisory from "./AbakkusAdvisory.js";
 
 import { Columns } from 'react-bulma-components';
 
@@ -15,15 +16,17 @@ class AbakkusPeople extends Component {
         }
 
         var peoplePage = [];
+        var firstRow = true;
 
         for (let peopleIndex = 0; peopleIndex < peopleConfig.length; peopleIndex += 4) {
-            peoplePage.push(this.getPeopleCards(peopleConfig.slice(peopleIndex, peopleIndex + 4)))
+            peoplePage.push(this.getPeopleCards(peopleConfig.slice(peopleIndex, peopleIndex + 4), firstRow))
+            firstRow = false;
         }
 
         return peoplePage;
     }
 
-    getPeopleCards(rowPeople) {
+    getPeopleCards(rowPeople, firstRow) {
         var rowPeopleCards = [];
         rowPeople.map((person, index) => {
             if (person.name === undefined) {
@@ -37,8 +40,9 @@ class AbakkusPeople extends Component {
                     )
             }
         })
+        var marginTop = firstRow == true ? '78px' : '16px';
         return (
-            <Columns style = {{ marginTop: '16px', marginRight: '16px', marginLeft: '16px' }}>
+            <Columns style = {{ marginTop: marginTop, marginRight: '16px', marginLeft: '16px' }}>
             { 
                 rowPeopleCards.map((personCard) => {
                     return personCard;
@@ -56,6 +60,7 @@ class AbakkusPeople extends Component {
                     this.returnRows()
                 }
                 <AbakkusFooter />
+                <AbakkusAdvisory />
             </div>
         )
     }

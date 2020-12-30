@@ -4,6 +4,7 @@ import { Heading, Tile, Section, Box, Table } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
+import AbakkusAdvisory from "./AbakkusAdvisory.js";
 
 class AbakkusProduct extends Component {
 	constructor(props) {
@@ -152,6 +153,7 @@ class AbakkusProduct extends Component {
 					</Section>
 				</div>
 				<AbakkusFooter />
+				<AbakkusAdvisory />
 			</div>
 		);
 	}

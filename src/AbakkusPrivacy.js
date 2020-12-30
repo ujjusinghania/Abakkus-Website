@@ -4,13 +4,14 @@ import { Container } from 'react-bulma-components';
 
 import AbakkusNavbar from './AbakkusNavbar.js';
 import AbakkusFooter from './AbakkusFooter.js';
+import AbakkusAdvisory from "./AbakkusAdvisory.js";
 
 class AbakkusPrivacy extends Component {
     render() {
         return (
             <div>
                 <AbakkusNavbar />
-                <div style={{ marginTop: '32px' }}>
+                <div style={{ marginTop: '78px' }}>
                     <Container>
                         <p class="is-size-2">Abakkus Asset Manager LLP's Privacy Policy</p><br />
                         <p>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally
@@ -250,6 +251,7 @@ class AbakkusPrivacy extends Component {
                     </Container>
                 </div>
                 <AbakkusFooter />
+				<AbakkusAdvisory />
             </div>
         )
     }
