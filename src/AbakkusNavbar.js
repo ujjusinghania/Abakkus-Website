@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import 'react-bulma-components/dist/react-bulma-components.min.css';
+import styles from './css/Abakkus.css';
 
-import { Navbar, Button } from 'react-bulma-components';
+import { Navbar, Button, Image } from 'react-bulma-components';
 import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const navbarBlogConfig = require('./config/navbarBlogConfig.json');
@@ -19,8 +20,8 @@ class AbakkusNavbar extends Component {
     render() {
         return (
             <Navbar fixed="top" active={this.state.burgerEnabled} style={{ boxShadow: "0px 0.5px 8px rgba(0,0,0,0.2)" }}>
-                <Navbar.Brand style={{background: 'red'}}>
-                    <Navbar.Item renderAs="a" href="#" style={{ background: 'blue' }}>
+                <Navbar.Brand  style={{ height: '3rem', marginTop: '8px' }}>
+                    <Navbar.Item renderAs="a" href="#" style={{ height: '80%', width: "11rem", backgroundImage: "url(\"https://www.dropbox.com/s/nxvhcfvgi88zd58/Abakkus%20Logo.jpg?raw=1\")", backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
 
                     </Navbar.Item>
                     <Navbar.Burger onClick={ () => { this.setState({'burgerEnabled': !this.state.burgerEnabled })}}/>
@@ -48,7 +49,7 @@ class AbakkusNavbar extends Component {
                             </Navbar.Link>
                             <Navbar.Dropdown>
                                 <Navbar.Item href="#" renderAs='p'>
-                                    Alternative Investment Funds
+                                    <b>Alternative Investment Funds</b>
                                 </Navbar.Item>
                                 <Navbar.Divider/>
                                 <Navbar.Item href="/product/aif/abakkus_growth_fund_I">
@@ -59,7 +60,7 @@ class AbakkusNavbar extends Component {
                                 </Navbar.Item>
                                 <Navbar.Divider/>
                                 <Navbar.Item href="#" renderAs='p'>
-                                    Portfolio Management Services
+                                    <b>Portfolio Management Services</b>
                                 </Navbar.Item>
                                 <Navbar.Divider/>
                                 <Navbar.Item href="/product/pms/abakkus_all_cap_approach">
@@ -77,9 +78,6 @@ class AbakkusNavbar extends Component {
                             <Navbar.Dropdown>
                                 <Navbar.Item href="#">
                                     Investor Login
-                                </Navbar.Item>
-                                <Navbar.Item href="#">
-                                    Dummy Item
                                 </Navbar.Item>
                             </Navbar.Dropdown>
                         </Navbar.Item>

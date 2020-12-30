@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import { Footer, Container, Tile, Heading } from "react-bulma-components";
 
-const complaintsConfig = require("./config/complaintsConfig.json");
-
 class AbakkusFooter extends Component {
 	render() {
 		return (
@@ -25,6 +23,7 @@ class AbakkusFooter extends Component {
 								<br /> 1st Floor, 106, B-Wing,
 								<br /> G Block, The Capital,
 								<br /> Bandra Kurla Complex,
+								<br /> Mumbai - 400051
 								<br />
 							</div>
 						</Tile>
@@ -35,51 +34,6 @@ class AbakkusFooter extends Component {
 								<a href="mailto: info@abakkusinvest.com">
 									Email: info@abakkusinvest.com
 								</a>
-							</div>
-						</Tile>
-					</Tile>
-				</Container>
-				<Container style={{ marginTop: "64px" }}>
-					<Heading subtitle style={{ marginBottom: "32px", textAlign: "center" }}>
-						Investment Advisory - Number of Complaints for{" "}
-						{complaintsConfig["monthText"]}
-					</Heading>
-					<Tile kind="ancestor">
-						<Tile renderAs="article" kind="child" notification color="light">
-							<div>
-								<p>
-									At the Beginning of the Month:{" "}
-									{complaintsConfig["beginningMonth"]}
-								</p>
-							</div>
-						</Tile>
-						<Tile renderAs="article" kind="child" notification color="light">
-							<div>
-								<p>
-									Received During the Month: {complaintsConfig["duringMonth"]}
-								</p>
-							</div>
-						</Tile>
-						<Tile renderAs="article" kind="child" notification color="light">
-							<div>
-								<p>
-									Resolved During the Month: {complaintsConfig["resolvedMonth"]}
-								</p>
-							</div>
-						</Tile>
-						<Tile renderAs="article" kind="child" notification color="light">
-							<div>
-								<p>
-									Pending at the End of the Month:{" "}
-									{complaintsConfig["pendingMonth"]}
-								</p>
-							</div>
-						</Tile>
-						<Tile renderAs="article" kind="child" notification color="light">
-							<div>
-								<p>
-									Reasons for Pendency: {complaintsConfig["reasonsPendency"]}
-								</p>
 							</div>
 						</Tile>
 					</Tile>

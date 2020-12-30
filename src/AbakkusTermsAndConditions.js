@@ -4,13 +4,14 @@ import { Container } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
+import AbakkusAdvisory from "./AbakkusAdvisory.js";
 
 class AbakkusTermsAndConditions extends Component {
 	render() {
 		return (
 			<div>
 				<AbakkusNavbar />
-				<div style={{ marginTop: "32px" }}>
+				<div style={{ marginTop: "78px" }}>
 					<Container>
 						<p class="is-size-2">Welcome to Abakkus Asset Manager LLP</p>
 						<br />
@@ -316,6 +317,7 @@ class AbakkusTermsAndConditions extends Component {
 					</Container>
 				</div>
 				<AbakkusFooter />
+				<AbakkusAdvisory />
 			</div>
 		);
 	}

@@ -4,6 +4,7 @@ import { Heading, Tile, Section, Box, Table } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
+import AbakkusAdvisory from "./AbakkusAdvisory.js";
 
 class AbakkusProduct extends Component {
 	constructor(props) {
@@ -15,7 +16,7 @@ class AbakkusProduct extends Component {
 		if (Object.keys(abakkusProduct.top_10).length !== 0) {
 			return (
 				<Tile kind="parent" size={5}>
-					<Tile renderAs="article" kind="child" notification color="light">
+					<Tile renderAs="article" kind="child" notification color="light" style={{ boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}>
 						<div className="content">
 							<Heading>Top Ten</Heading>
 							<div className="content">
@@ -52,7 +53,6 @@ class AbakkusProduct extends Component {
 				<AbakkusNavbar />
 				<div style={{ marginTop: "32px" }}>
 					<Section>
-						<Box style={{ marginLeft: "32px", marginRight: "32px" }}>
 							<Tile kind="ancestor" vertical>
 								<Tile kind="parent" style={{ marginBottom: '-16px'}}>
 									<Tile kind="parent">
@@ -61,6 +61,7 @@ class AbakkusProduct extends Component {
 											kind="child"
 											notification
 											color="danger"
+											style={{ background: 'rgb(40, 56, 123)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 										>
 											<Heading>{abakkusProduct.name}</Heading>
 										</Tile>
@@ -75,6 +76,7 @@ class AbakkusProduct extends Component {
 													kind="child"
 													notification
 													color="primary"
+													style={{ background: 'rgb(0, 80, 123)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 												>
 													<Heading subtitle>{abakkusProduct.brief}</Heading>
 												</Tile>
@@ -82,7 +84,8 @@ class AbakkusProduct extends Component {
 													renderAs="article"
 													kind="child"
 													notification
-													color="warning"
+													color="primary"
+													style={{ background: 'rgb(0, 95, 140)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 												>
 													<Heading>Fund Manager</Heading>
 													<Heading subtitle>
@@ -93,7 +96,8 @@ class AbakkusProduct extends Component {
 													renderAs="article"
 													kind="child"
 													notification
-													color="warning"
+													color="primary"
+													style={{ background: 'rgb(0, 49, 79)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 												>
 													<Heading>Benchmark</Heading>
 													<Heading subtitle>{abakkusProduct.benchmark}</Heading>
@@ -102,7 +106,8 @@ class AbakkusProduct extends Component {
 													renderAs="article"
 													kind="child"
 													notification
-													color="warning"
+													color="primary"
+													style={{ background: 'rgb(0, 40, 60)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 												>
 													<Heading>Custodian</Heading>
 													<Heading subtitle>{abakkusProduct.custodian}</Heading>
@@ -114,6 +119,7 @@ class AbakkusProduct extends Component {
 													kind="child"
 													notification
 													color="info"
+													style={{ boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 												>
 													<Heading>Strategy</Heading>
 													<Heading subtitle>
@@ -134,6 +140,7 @@ class AbakkusProduct extends Component {
 											kind="child"
 											notification
 											color="success"
+											style={{ background: 'rgb(232, 136, 62)', boxShadow: "0px 1px 12px rgba(0,0,0,0.3)" }}
 										>
 											<div className="content">
 												<Heading subtitle>Disclaimer</Heading>
@@ -143,10 +150,10 @@ class AbakkusProduct extends Component {
 									</Tile>
 								</Tile>
 							</Tile>
-						</Box>
 					</Section>
 				</div>
 				<AbakkusFooter />
+				<AbakkusAdvisory />
 			</div>
 		);
 	}
