@@ -17,8 +17,7 @@ class AbakkusHome extends Component {
 					src="https://www.dropbox.com/s/yf2s9kuzm1y78b1/Abakkus%20Homepage.jpeg?raw=1"
 					className="FullPageBackground"
 				/>
-				<AbakkusFooter />
-				<AbakkusAdvisory />
+				<AbakkusFooter />				
 
 				
 			</div>

@@ -40,9 +40,8 @@ class AbakkusPeople extends Component {
                     )
             }
         })
-        var marginTop = firstRow == true ? '78px' : '16px';
         return (
-            <Columns style = {{ marginTop: marginTop, marginRight: '16px', marginLeft: '16px' }}>
+            <Columns style = {{ marginTop: "16px", marginRight: '16px', marginLeft: '16px' }}>
             { 
                 rowPeopleCards.map((personCard) => {
                     return personCard;
@@ -59,8 +58,7 @@ class AbakkusPeople extends Component {
                 {
                     this.returnRows()
                 }
-                <AbakkusFooter />
-                <AbakkusAdvisory />
+                <AbakkusFooter />                
             </div>
         )
     }

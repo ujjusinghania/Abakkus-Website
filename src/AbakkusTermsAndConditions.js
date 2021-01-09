@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container } from "react-bulma-components";
+import { Heading, Container } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
@@ -11,10 +11,9 @@ class AbakkusTermsAndConditions extends Component {
 		return (
 			<div>
 				<AbakkusNavbar />
-				<div style={{ marginTop: "78px" }}>
+				<div style={{ marginTop: "48px" }}>
 					<Container>
-						<p class="is-size-2">Welcome to Abakkus Asset Manager LLP</p>
-						<br />
+						<Heading>Welcome to Abakkus Asset Manager LLP</Heading>
 						<p>
 							These terms and conditions outline the rules and regulations for
 							the use of Abakkus Asset Manager LLP's Website.
@@ -56,7 +55,7 @@ class AbakkusTermsAndConditions extends Component {
 							taken as interchangeable and therefore as referring to same.
 						</p>
 						<br />
-						<p class="is-size-4">Cookies</p>
+						<Heading subtitle>Cookies</Heading>
 						<p>
 							We employ the use of cookies. By using Abakkus Asset Manager LLP's
 							website you consent to the use of cookies in accordance with
@@ -71,7 +70,7 @@ class AbakkusTermsAndConditions extends Component {
 							advertising partners may also use cookies.
 						</p>
 						<br />
-						<p class="is-size-4">License</p>
+						<Heading subtitle>License</Heading>
 						<p>
 							Unless otherwise stated, Abakkus Asset Manager LLP and/or it’s
 							licensors own the intellectual property rights for all material on
@@ -99,7 +98,7 @@ class AbakkusTermsAndConditions extends Component {
 							content is specifically made for redistribution).
 						</p>
 						<br />
-						<p class="is-size-4">Hyperlinking to our Content</p>
+						<Heading subtitle>Hyperlinking to our Content</Heading>
 						<ol>
 							<li>
 								The following organizations may link to our Web site without
@@ -218,7 +217,7 @@ class AbakkusTermsAndConditions extends Component {
 							be allowed for linking absent a trademark license agreement.
 						</p>
 						<br />
-						<p class="is-size-4">Iframes</p>
+						<Heading subtitle>Iframes</Heading>
 						<p>
 							Without prior approval and express written permission, you may not
 							create frames around our Web pages or use other techniques that
@@ -226,7 +225,7 @@ class AbakkusTermsAndConditions extends Component {
 							site.
 						</p>
 						<br />
-						<p class="is-size-4">Reservation of Rights</p>
+						<Heading subtitle>Reservation of Rights</Heading>
 						<p>
 							We reserve the right at any time and in its sole discretion to
 							request that you remove all links or any particular link to our
@@ -237,7 +236,7 @@ class AbakkusTermsAndConditions extends Component {
 							abide by these linking terms and conditions.
 						</p>
 						<br />
-						<p class="is-size-4">Removal of links from our website</p>
+						<Heading subtitle>Removal of links from our website</Heading>
 						<p>
 							If you find any link on our Web site or any linked web site
 							objectionable for any reason, you may contact us about this. We
@@ -252,7 +251,7 @@ class AbakkusTermsAndConditions extends Component {
 							the material on the website is kept up to date.
 						</p>
 						<br />
-						<p class="is-size-4">Content Liability</p>
+						<Heading subtitle>Content Liability</Heading>
 						<p>
 							We shall have no responsibility or liability for any content
 							appearing on your Web site. You agree to indemnify and defend us
@@ -264,7 +263,7 @@ class AbakkusTermsAndConditions extends Component {
 							third party rights.
 						</p>
 						<br />
-						<p class="is-size-4">Disclaimer</p>
+						<Heading subtitle>Disclaimer</Heading>
 						<p>
 							To the maximum extent permitted by applicable law, we exclude all
 							representations, warranties and conditions relating to our website
@@ -307,7 +306,7 @@ class AbakkusTermsAndConditions extends Component {
 							any loss or damage of any nature.
 						</p>
 						<br />
-						<p class="is-size-4">Credit & Contact Information</p>
+						<Heading subtitle>Credit & Contact Information</Heading>
 						<p>
 							{" "}
 							If you have any queries regarding any of our terms,{" "}
@@ -316,8 +315,7 @@ class AbakkusTermsAndConditions extends Component {
 						<br />
 					</Container>
 				</div>
-				<AbakkusFooter />
-				<AbakkusAdvisory />
+				<AbakkusFooter />				
 			</div>
 		);
 	}
