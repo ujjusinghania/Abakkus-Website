@@ -11,8 +11,7 @@ class AbakkusDisclaimer extends Component {
                 <div>
 
                 </div>
-                <AbakkusFooter />
-				<AbakkusAdvisory />
+                <AbakkusFooter />				
             </div>
         )
     }

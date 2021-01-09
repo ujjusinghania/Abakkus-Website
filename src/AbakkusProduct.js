@@ -51,7 +51,7 @@ class AbakkusProduct extends Component {
 		return (
 			<div>
 				<AbakkusNavbar />
-				<div style={{ marginTop: "32px" }}>
+				<div>
 					<Section>
 							<Tile kind="ancestor" vertical>
 								<Tile kind="parent" style={{ marginBottom: '-16px'}}>
@@ -152,8 +152,7 @@ class AbakkusProduct extends Component {
 							</Tile>
 					</Section>
 				</div>
-				<AbakkusFooter />
-				<AbakkusAdvisory />
+				<AbakkusFooter />				
 			</div>
 		);
 	}
