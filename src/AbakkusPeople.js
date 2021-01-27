@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet'
 
 import AbakkusNavbar from './AbakkusNavbar.js';
 import AbakkusPeopleCard from './AbakkusPeopleCard.js';
@@ -54,6 +55,9 @@ class AbakkusPeople extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+					<title>Abakkus People</title>
+				</Helmet>
                 <AbakkusNavbar />
                 {
                     this.returnRows()

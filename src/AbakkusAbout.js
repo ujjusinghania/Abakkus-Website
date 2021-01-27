@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 import { Section, Heading, Container } from "react-bulma-components";
 
@@ -10,20 +11,23 @@ class AbakkusAbout extends Component {
 	render() {
 		return (
 			<div>
+				<Helmet>
+					<title>Abakkus About</title>
+				</Helmet>
 				<AbakkusNavbar />
-				<div style={{ marginTop: "48px" }}>
+				<div>
 					<Section>
 						<Container
-							fluid
 							style={{ marginLeft: "32px", marginRight: "32px" }}
 						>
 							<Heading>Our Story</Heading>
 							<Heading subtitle>Why the name Abakkus?</Heading>
 							<p>
 								The name Abakkus is inspired by the English word, Abacus, which
-								refers to a “simple instrument used for computing”.<br/>
-                                This ideology has shaped our beliefs. We like to:
-                                </p>
+								refers to a “simple instrument used for computing”.
+								<br />
+								This ideology has shaped our beliefs. We like to:
+							</p>
 							<br />
 							<ol>
 								<li>Keep things simple.</li>
@@ -48,7 +52,7 @@ class AbakkusAbout extends Component {
 						</Container>
 					</Section>
 				</div>
-				<AbakkusFooter />				
+				<AbakkusFooter />
 			</div>
 		);
 	}

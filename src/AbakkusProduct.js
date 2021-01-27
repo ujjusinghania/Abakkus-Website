@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Helmet } from 'react-helmet'
 
-import { Heading, Tile, Section, Box, Table } from "react-bulma-components";
+import { Heading, Tile, Section, Table } from "react-bulma-components";
 
 import AbakkusNavbar from "./AbakkusNavbar.js";
 import AbakkusFooter from "./AbakkusFooter.js";
@@ -50,6 +51,9 @@ class AbakkusProduct extends Component {
 		console.log(Object.keys(abakkusProduct.top_10));
 		return (
 			<div>
+				<Helmet>
+					<title>{abakkusProduct.name}</title>
+				</Helmet>
 				<AbakkusNavbar />
 				<div>
 					<Section>
