@@ -39,7 +39,7 @@ class AbakkusFooter extends Component {
 					</Tile>
 				</Container>
 				<Container style={{ marginTop: "32px", textAlign: "center" }}>
-					LLP - Copyright © 2020 Abakkus Asset Manager LLP | All Rights Reserved
+					LLP - Copyright © 2021 Abakkus Asset Manager LLP | All Rights Reserved
 					<br />
 					<a href="/termsandconditions">Terms and Conditions</a> |
 					<a href="/privacy"> Privacy Policy</a>

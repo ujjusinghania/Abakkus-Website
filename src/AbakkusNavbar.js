@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import styles from './css/Abakkus.css';
 
-import { Navbar, Button, Image } from 'react-bulma-components';
+import { Navbar, Button } from 'react-bulma-components';
 import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const navbarBlogConfig = require('./config/navbarBlogConfig.json');
@@ -89,6 +88,8 @@ class AbakkusNavbar extends Component {
                             <Button renderAs='a' href="https://www.linkedin.com/company/abakkus-asset-managers-llp" target="_blank" color='info' style={{ marginLeft: "16px", background: "#0077B5" }}><strong>Follow Us&nbsp;&nbsp;</strong><FaLinkedin /></Button>
                             <Button renderAs='a' href="https://www.facebook.com/abakkusinvest" target="_blank" color='info' style={{ marginLeft: "16px", background: "#3b5998" }}><strong>Follow Us&nbsp;&nbsp;</strong><FaFacebook /></Button>
                         </Navbar.Item>
+                        <Navbar.Item href="#" renderAs='p' />
+                        <Navbar.Item href="#" renderAs='p' />
                     </Navbar.Container>
                 </Navbar.Menu>
             </Navbar>
