@@ -28,18 +28,8 @@ class AbakkusNavbar extends Component {
                 <Navbar.Menu>
                     <Navbar.Container position="end">
                         <Navbar.Item href="/">Home</Navbar.Item>
-                        <Navbar.Item dropdown hoverable href="/about">
-                            <Navbar.Link arrowless={false}>
+                        <Navbar.Item href="/about">
                                 About
-                            </Navbar.Link>
-                            <Navbar.Dropdown>
-                                <Navbar.Item href="/about/ourstory">
-                                    Our Story
-                                </Navbar.Item>
-                                <Navbar.Item href="/about/investment">
-                                    Investment Philosophy
-                                </Navbar.Item>
-                            </Navbar.Dropdown>
                         </Navbar.Item>
                         <Navbar.Item href="/people">People</Navbar.Item>
                         <Navbar.Item dropdown hoverable href="#">
@@ -88,8 +78,6 @@ class AbakkusNavbar extends Component {
                             <Button renderAs='a' href="https://www.linkedin.com/company/abakkus-asset-managers-llp" target="_blank" color='info' style={{ marginLeft: "16px", background: "#0077B5" }}><strong>Follow Us&nbsp;&nbsp;</strong><FaLinkedin /></Button>
                             <Button renderAs='a' href="https://www.facebook.com/abakkusinvest" target="_blank" color='info' style={{ marginLeft: "16px", background: "#3b5998" }}><strong>Follow Us&nbsp;&nbsp;</strong><FaFacebook /></Button>
                         </Navbar.Item>
-                        <Navbar.Item href="#" renderAs='p' />
-                        <Navbar.Item href="#" renderAs='p' />
                     </Navbar.Container>
                 </Navbar.Menu>
             </Navbar>
