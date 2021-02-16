@@ -7,6 +7,7 @@ import AbakkusPeople from './AbakkusPeople.js';
 import AbakkusTermsAndConditions from './AbakkusTermsAndConditions.js';
 import AbakkusPrivacy from './AbakkusPrivacy.js';
 import AbakkusProduct from './AbakkusProduct.js';
+import AbakkusDisclosure from './AbakkusDisclosure.js';
 
 const productsAIFJson = {
     "abakkus_growth_fund_I": require('./config/products/aif/abakkus_growth_fund_I.json'),
@@ -28,6 +29,7 @@ class Routes extends Component {
                     <Route path='/people' component={ AbakkusPeople } />
                     <Route path='/termsandconditions' component={ AbakkusTermsAndConditions } />
                     <Route path='/privacy' component={ AbakkusPrivacy } />
+                    <Route path='/disclosure' component={ AbakkusDisclosure } />
                     <Route path='/product/aif/abakkus_growth_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_growth_fund_I"] } />)} />
                     <Route path='/product/aif/abakkus_emerging_opportunities_fund_I' render={ () => ( <AbakkusProduct jsonObj = { productsAIFJson["abakkus_emerging_opportunities_fund_I"] } />)} />
                     <Route path='/product/pms/abakkus_all_cap_approach' render={ () => ( <AbakkusProduct jsonObj = { productsPMSJson["abakkus_all_cap_approach"] } />)} />
